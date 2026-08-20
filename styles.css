@@ -515,3 +515,8 @@ background-image:linear-gradient black(255,255,255,.84),rgba(255,255,255,.82)),u
 background color{
     background-color: black;
 }
+h4{
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
