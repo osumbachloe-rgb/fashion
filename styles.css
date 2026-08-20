@@ -1,0 +1,71 @@
+:root {
+    --color-anchor: #3D2314; /* Chocolate Brown */
+    --color-accent: #F9F1D0; /* Butter Yellow */
+    --color-accent-2: #D1E8E2; /* Pale Ice Blue */
+    --bg: #ffffff;
+    --text: #111217;
+    --muted: #6b6b6b;
+    --max-width: 70ch;
+    --gap: 1.25rem;
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {box-sizing: border-box}
+html,body {height:100%}
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--gap);
+}
+
+.header-top {display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.eyebrow {font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.site-nav ul {list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.site-nav a {color:var(--color-anchor);text-decoration:none;font-weight:600}
+
+h1,h2,h3 {font-family:var(--font-heading);color:var(--color-anchor);margin:0 0 .5rem 0;line-height:1.05}
+h1 {font-size:2.6rem;font-weight:700;letter-spacing:-0.01em}
+h2 {font-size:1.25rem;margin-top:1.25rem}
+
+.lead {font-size:1.125rem;color:var(--muted);margin-bottom:1.5rem}
+p {margin:0 0 1rem 0}
+
+a {color:var(--color-anchor);text-decoration:none;border-bottom:1px solid rgba(61,35,20,0.06);transition:color .18s ease,border-color .18s ease}
+a:hover {color:var(--color-accent-2);border-color:transparent}
+
+.image-grid {display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);margin:1rem 0}
+.image-grid img {width:100%;height:auto;border-radius:6px;display:block}
+
+.accent-block {background:var(--color-accent);padding:1rem;border-radius:6px;color:var(--color-anchor);margin:1.5rem 0}
+
+@media(min-width:900px){
+    body{padding:5rem 1rem}
+    .container{padding:0}
+    h1{font-size:3.6rem}
+}
+
+/* Utility */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+img{
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+}
